@@ -1,0 +1,7 @@
+.slider {
+    max-width: 1170px;
+    width: 100%;
+    position: relative;
+    margin-top: 25px;
+    overflow: hidden;
+}

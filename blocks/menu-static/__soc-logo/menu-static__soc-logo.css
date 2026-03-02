@@ -1,0 +1,9 @@
+.menu-static__soc-logo {
+    width: 40px;
+    height: 40px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-static__soc-logo:hover {
+    transform: scale(1.2);
+}

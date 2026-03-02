@@ -1,0 +1,9 @@
+.menu-static__tel {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Bahnschrift';
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.3em;
+}

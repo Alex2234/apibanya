@@ -1,0 +1,5 @@
+.service__items_active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}

@@ -1,0 +1,19 @@
+.menu-list__paragraph {
+    text-decoration: none;
+    color: #000;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+@media (max-width: 900px) {
+    .menu-list__paragraph {
+        font-size: 24px;
+    }
+}
+
+.menu-list__paragraph:hover {
+    opacity: .7;
+}

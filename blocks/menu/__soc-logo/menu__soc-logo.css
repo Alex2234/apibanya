@@ -1,0 +1,16 @@
+.menu__soc-logo {
+    width: 40px;
+    height: 40px;
+    transition: all .5s ease-in-out;
+}
+
+@media (max-width: 900px) {
+    .menu__soc-logo {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.menu__soc-logo:hover {
+    transform: scale(1.2);
+}

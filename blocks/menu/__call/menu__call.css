@@ -1,0 +1,9 @@
+.menu__call {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .menu__call {
+       display: block;
+    }
+}

@@ -1,0 +1,14 @@
+.service {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 90px 20px;
+    font-family: 'Bahnschrift', sans-serif;
+    border-radius: 40px;
+    background-color: #f9f2e2;
+}
+
+@media (max-width: 900px) {
+    .service {
+        padding: 35px 10px;
+    }
+}

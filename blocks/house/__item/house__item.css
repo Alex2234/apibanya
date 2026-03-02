@@ -1,0 +1,10 @@
+.house__item {
+    margin: 0;
+    font-size: 32px;
+}
+
+@media (max-width: 900px) {
+    .house__item {
+        font-size: 22px;
+    }
+}

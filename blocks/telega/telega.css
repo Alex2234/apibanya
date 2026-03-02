@@ -1,0 +1,23 @@
+.telega {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    top: auto;
+    bottom: 50px;
+    left: auto;
+    right: 20px;
+}
+
+@media (max-width: 900px) {
+    .telegram {
+        display: block;
+        top: auto;
+        bottom: 30px;
+        left: auto;
+        right: 20px;
+    }
+}

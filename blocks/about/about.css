@@ -1,0 +1,12 @@
+.about {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 40px 20px;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+@media (max-width: 900px) {
+    .about {
+        padding: 5px 5px;
+    }
+}

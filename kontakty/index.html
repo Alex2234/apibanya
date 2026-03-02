@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="view-transition" content="same-origin" />
+    <title>Контакты АпиБани — адрес, телефон, карта проезда | Белгород</title>
+    <meta name="description" content="АпиБаня: Белгород, Ближняя Игуменка 16/3, 4-ая Садовая 36. Телефон: +7 920 555 85 59. Время работы: 9:00–22:00. Карта проезда." />
+    <meta name="keywords" content="апибаня контакты, баня белгород адрес, баня ближняя игуменка, апибаня телефон, как проехать апибаня" />
+    <link rel="canonical" href="https://apibanya.ru/kontakty/" />
+    <link rel="alternate" hreflang="ru-RU" href="https://apibanya.ru/kontakty/" />
+    <meta name="theme-color" content="#2d5016" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Контакты АпиБани — адрес, телефон, карта проезда | Белгород" />
+    <meta property="og:description" content="АпиБаня: Белгород, Ближняя Игуменка 16/3, 4-ая Садовая 36. Телефон: +7 920 555 85 59. Время работы: 9:00–22:00." />
+    <meta property="og:url" content="https://apibanya.ru/kontakty/" />
+    <meta property="og:site_name" content="АпиБаня" />
+    <meta property="og:image" content="https://apibanya.ru/images/fon.webp" />
+    <meta property="og:image:type" content="image/webp" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Контакты АпиБани — адрес, телефон, карта проезда | Белгород" />
+    <meta name="twitter:description" content="АпиБаня: Белгород, Ближняя Игуменка 16/3, 4-ая Садовая 36. Телефон: +7 920 555 85 59." />
+    <meta name="twitter:image" content="https://apibanya.ru/images/fon.webp" />
+
+    <!-- Favicon -->
+    <link rel="icon" sizes="120x120" href="https://apibanya.ru/images/favicon.svg" type="image/svg+xml" />
+
+    <!-- Fonts Preload -->
+    <link rel="preload" href="../fonts/inter-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../fonts/playfair-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/components/button.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/components/breadcrumb.css" />
+    <link rel="stylesheet" href="../css/components/modal.css" />
+    <link rel="stylesheet" href="../css/pages/home.css" />
+
+    <!-- Page-specific inline styles (contacts page) -->
+    <style>
+      .contacts-map {
+        width: 100%;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: var(--shadow-md);
+      }
+
+      .contacts-map iframe {
+        width: 100%;
+        height: 450px;
+        border: 0;
+        display: block;
+      }
+
+      .contacts-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-8);
+        margin-top: var(--space-8);
+      }
+
+      .contact-block {
+        background-color: var(--color-white);
+        border-radius: var(--radius-lg);
+        padding: var(--space-6);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .contact-block__title {
+        font-family: var(--font-accent);
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text);
+        margin-bottom: var(--space-5);
+        padding-bottom: var(--space-4);
+        border-bottom: 2px solid var(--color-border-light);
+      }
+
+      .contact-info-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-5);
+      }
+
+      .contact-info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--space-4);
+      }
+
+      .contact-info-item__icon {
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-bg-section);
+        border-radius: var(--radius-full);
+        font-size: var(--font-size-lg);
+      }
+
+      .contact-info-item__content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-1);
+      }
+
+      .contact-info-item__label {
+        font-size: var(--font-size-sm);
+        font-weight: var(--font-weight-semibold);
+        text-transform: uppercase;
+        letter-spacing: var(--letter-spacing-wider);
+        color: var(--color-text-muted);
+      }
+
+      .contact-info-item__value {
+        font-size: var(--font-size-md);
+        color: var(--color-text);
+        line-height: var(--line-height-normal);
+      }
+
+      .contact-info-item__value a {
+        color: var(--color-primary);
+        font-weight: var(--font-weight-semibold);
+        text-decoration: none;
+      }
+
+      .contact-info-item__value a:hover {
+        color: var(--color-primary-light);
+        text-decoration: underline;
+      }
+
+      .contact-info-item__note {
+        font-size: var(--font-size-sm);
+        color: var(--color-text-muted);
+        margin-top: var(--space-1);
+      }
+
+      .contacts-socials {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-3);
+        margin-top: var(--space-4);
+      }
+
+      .contacts-social-link {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+        padding: var(--space-2) var(--space-4);
+        background-color: var(--color-bg-alt);
+        border-radius: var(--radius-full);
+        font-size: var(--font-size-sm);
+        font-weight: var(--font-weight-medium);
+        color: var(--color-text);
+        transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+        text-decoration: none;
+      }
+
+      .contacts-social-link:hover {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .contacts-social-link img {
+        width: 18px;
+        height: 18px;
+      }
+
+      @media (max-width: 768px) {
+        .contacts-grid {
+          grid-template-columns: 1fr;
+          gap: var(--space-5);
+        }
+
+        .contacts-map iframe {
+          height: 300px;
+        }
+
+        .contact-block {
+          padding: var(--space-5);
+        }
+      }
+    </style>
+
+    <!-- Preconnect Analytics -->
+    <link rel="preconnect" href="https://mc.yandex.ru" crossorigin />
+    <link rel="dns-prefetch" href="//mc.yandex.ru" />
+    <link rel="dns-prefetch" href="//top-fwz1.mail.ru" />
+    <link rel="dns-prefetch" href="//www.clarity.ms" />
+
+    <!-- Schema.org — BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://apibanya.ru/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Контакты"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Schema.org — LocalBusiness (extended) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://apibanya.ru/#organization",
+      "name": "АпиБаня — русская баня на дровах",
+      "description": "Уникальная русская баня на дровах с апитерапией в Белгороде. Парение вениками, чан с травами, холодная купель, сон на пчёлах.",
+      "image": [
+        "https://apibanya.ru/images/fon.webp",
+        "https://apibanya.ru/images/slider/1.webp",
+        "https://apibanya.ru/images/slider/2.webp"
+      ],
+      "url": "https://apibanya.ru/",
+      "telephone": "+7 920 555-85-59",
+      "email": "",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Белгород",
+        "addressRegion": "Белгородская область",
+        "streetAddress": "Ближняя Игуменка 16/3, 4-ая Садовая 36",
+        "postalCode": "308519",
+        "addressCountry": "RU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.606878,
+        "longitude": 36.679902
+      },
+      "hasMap": "https://yandex.ru/maps/org/apibanya/81471725923/",
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "09:00",
+        "closes": "22:00"
+      }],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+7 920 555-85-59",
+        "contactType": "reservations",
+        "availableLanguage": "Russian",
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        }
+      },
+      "sameAs": [
+        "https://t.me/+79205558559",
+        "https://vk.com/apibanya",
+        "https://ok.ru/profile/576816808918",
+        "https://dzen.ru/id/61f9116f07318d6ec2c3bbed"
+      ],
+      "priceRange": "$$",
+      "currenciesAccepted": "RUB",
+      "paymentAccepted": "Cash, Credit Card"
+    }
+    </script>
+  </head>
+  <body class="page">
+
+    <!-- HEADER START -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="/" class="site-header__logo">
+          <img src="../images/logo.webp" alt="Логотип АпиБаня" class="site-header__logo-img" width="48" height="48" />
+          <span class="site-header__logo-text">АпиБаня</span>
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li><a href="/" class="site-nav__link">Главная</a></li>
+            <li><a href="/parenie/" class="site-nav__link">Парение</a></li>
+            <li><a href="/spa/" class="site-nav__link">SPA</a></li>
+            <li><a href="/apiterapiya/" class="site-nav__link">Апитерапия</a></li>
+            <li><a href="/ceny/" class="site-nav__link">Цены</a></li>
+            <li><a href="/kontakty/" class="site-nav__link" aria-current="page">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__contact">
+          <div class="site-header__social">
+            <a href="https://t.me/+79205558559" target="_blank" rel="noopener noreferrer" class="site-header__social-link" aria-label="Telegram">
+              <img src="../images/telegram.svg" alt="" width="20" height="20" />
+            </a>
+          </div>
+          <a href="tel:+79205558559" class="site-header__phone">+7 920 555 85 59</a>
+        </div>
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-overlay"></div>
+    <nav class="mobile-nav" aria-label="Мобильная навигация">
+      <button class="mobile-nav__close" aria-label="Закрыть меню">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor"/></svg>
+      </button>
+      <ul class="mobile-nav__list">
+        <li><a href="/" class="mobile-nav__link">Главная</a></li>
+        <li><a href="/parenie/" class="mobile-nav__link">Парение вениками</a></li>
+        <li><a href="/spa/" class="mobile-nav__link">SPA-процедуры</a></li>
+        <li><a href="/apiterapiya/" class="mobile-nav__link">Апитерапия</a></li>
+        <li><a href="/ceny/" class="mobile-nav__link">Цены</a></li>
+        <li><a href="/pcheloprodukty/" class="mobile-nav__link">Пчелопродукция</a></li>
+        <li><a href="/kontakty/" class="mobile-nav__link" aria-current="page">Контакты</a></li>
+      </ul>
+      <div class="mobile-nav__contact">
+        <a href="tel:+79205558559" class="mobile-nav__phone">+7 920 555 85 59</a>
+        <div class="mobile-nav__socials">
+          <a href="https://t.me/+79205558559" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Telegram">
+            <img src="../images/telegram.svg" alt="" width="20" height="20" />
+          </a>
+        </div>
+        <p class="mobile-nav__address">г. Белгород, Ближняя Игуменка 16/3, 4-ая Садовая 36</p>
+      </div>
+    </nav>
+    <!-- HEADER END -->
+
+    <main class="page__main">
+
+      <!-- ===== BREADCRUMB & PAGE HEADER ===== -->
+      <section class="section" style="padding-bottom: 0; background-color: var(--color-bg-alt);">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Хлебные крошки">
+            <ol class="breadcrumb__list">
+              <li class="breadcrumb__item">
+                <a href="/" class="breadcrumb__link">Главная</a>
+              </li>
+              <li class="breadcrumb__item">
+                <span class="breadcrumb__current" aria-current="page">Контакты</span>
+              </li>
+            </ol>
+          </nav>
+          <h1 style="font-family: var(--font-accent); font-size: var(--font-size-4xl); font-weight: var(--font-weight-bold); margin-bottom: var(--space-4);">Контакты</h1>
+          <p style="font-size: var(--font-size-lg); color: var(--color-text-light); max-width: 640px; margin-bottom: var(--space-8);">Приезжайте в гости, звоните или пишите в мессенджер. Мы всегда рады новым и постоянным гостям.</p>
+        </div>
+      </section>
+
+      <!-- ===== MAP ===== -->
+      <section class="section" style="padding-top: var(--space-6);">
+        <div class="container">
+          <div class="contacts-map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/org/apibanya/81471725923/?ll=36.679902%2C50.606878&z=17"
+              loading="lazy"
+              allowfullscreen
+              title="АпиБаня на Яндекс.Картах — Белгород, Ближняя Игуменка"
+            ></iframe>
+          </div>
+
+          <!-- ===== CONTACT INFO GRID ===== -->
+          <div class="contacts-grid">
+
+            <!-- Left column: Contact Details -->
+            <div class="contact-block">
+              <h2 class="contact-block__title">Как нас найти</h2>
+              <div class="contact-info-list">
+                <div class="contact-info-item">
+                  <div class="contact-info-item__icon" aria-hidden="true">&#128205;</div>
+                  <div class="contact-info-item__content">
+                    <span class="contact-info-item__label">Адрес</span>
+                    <span class="contact-info-item__value">г. Белгород, Ближняя Игуменка 16/3, 4-ая Садовая 36</span>
+                  </div>
+                </div>
+                <div class="contact-info-item">
+                  <div class="contact-info-item__icon" aria-hidden="true">&#128222;</div>
+                  <div class="contact-info-item__content">
+                    <span class="contact-info-item__label">Телефон</span>
+                    <span class="contact-info-item__value"><a href="tel:+79205558559">+7 920 555 85 59</a></span>
+                    <span class="contact-info-item__note">Звонки с 9:00 до 20:00, далее только мессенджеры</span>
+                  </div>
+                </div>
+                <div class="contact-info-item">
+                  <div class="contact-info-item__icon" aria-hidden="true">&#128339;</div>
+                  <div class="contact-info-item__content">
+                    <span class="contact-info-item__label">Время работы</span>
+                    <span class="contact-info-item__value">Ежедневно с 9:00 до 22:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right column: Social Links -->
+            <div class="contact-block">
+              <h2 class="contact-block__title">Мы в сети</h2>
+              <p style="color: var(--color-text-light); margin-bottom: var(--space-5);">Подписывайтесь на нас в социальных сетях, чтобы следить за новостями, акциями и фотографиями.</p>
+              <div class="contacts-socials">
+                <a href="https://t.me/+79205558559" target="_blank" rel="noopener noreferrer" class="contacts-social-link" aria-label="Telegram">
+                  <img src="../images/telegram.svg" alt="" width="18" height="18" />
+                  <span>Telegram</span>
+                </a>
+                <a href="https://vk.com/apibanya" target="_blank" rel="noopener noreferrer" class="contacts-social-link" aria-label="ВКонтакте">
+                  <img src="../images/vk.svg" alt="" width="18" height="18" />
+                  <span>ВКонтакте</span>
+                </a>
+                <a href="https://ok.ru/profile/576816808918" target="_blank" rel="noopener noreferrer" class="contacts-social-link" aria-label="Одноклассники">
+                  <img src="../images/ok.svg" alt="" width="18" height="18" />
+                  <span>Одноклассники</span>
+                </a>
+                <a href="https://dzen.ru/id/61f9116f07318d6ec2c3bbed" target="_blank" rel="noopener noreferrer" class="contacts-social-link" aria-label="Яндекс Дзен">
+                  <img src="../images/zen.svg" alt="" width="18" height="18" />
+                  <span>Дзен</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CTA ===== -->
+      <section class="cta-band">
+        <div class="container">
+          <h2 class="cta-band__title reveal">Забронируйте свой отдых</h2>
+          <p class="cta-band__text reveal">Позвоните нам или напишите в мессенджер — мы подберём удобное время и расскажем подробнее.</p>
+          <div class="cta-band__actions reveal">
+            <a href="tel:+79205558559" class="btn btn--accent btn--lg">Позвонить</a>
+            <a href="https://t.me/+79205558559" target="_blank" rel="noopener noreferrer" class="btn btn--white btn--lg">Написать в Telegram</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ПРАВИЛА АРЕНДЫ (модальное окно) ===== -->
+      <div class="modal-overlay" id="rules-modal">
+        <div class="modal" role="dialog" aria-labelledby="rules-title" aria-modal="true">
+          <div class="modal__header">
+            <h2 class="modal__title" id="rules-title">Правила аренды АпиБани</h2>
+            <button class="modal__close" data-modal-close aria-label="Закрыть">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
+          <div class="modal__body">
+            <div class="modal__text">
+              <p>Настоящие Правила являются обязательными для соблюдения всеми посетителями бани. С настоящими Правилами необходимо ознакомиться до посещения бани.</p>
+              <p>Начав пользование баней, Вы подтверждаете, что ознакомлены с настоящими Правилами, согласны с ними и обязуетесь их соблюдать.</p>
+              <p>За травмы и несчастные случаи, связанные с нарушением правил пользования баней, Администрация ответственности не несет!</p>
+              <p>Посетитель несет ответственность за сохранность и порчу имущества или оборудования.</p>
+              <strong>Посетителям запрещается:</strong>
+              <p>Входить в баню в состоянии алкогольного и наркотического опьянения; проносить оружие и пиротехнические изделия; оставлять детей без сопровождения взрослых; посещение бани при противопоказаниях; использовать моющие средства в стеклянной таре; заливать печку водой сверх нормы.</p>
+              <strong>Посетители обязаны:</strong>
+              <p>Соблюдать чистоту и порядок; соблюдать правила пожарной безопасности; находиться в сменной обуви; вести себя уважительно; следовать указаниям персонала; покинуть баню после окончания сеанса.</p>
+              <p>Звонки осуществляются с 9:00 до 20:00, далее только мессенджеры.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- FOOTER START -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="site-footer__grid">
+          <div class="site-footer__brand">
+            <div class="site-footer__logo">
+              <img src="../images/logo.webp" alt="Логотип АпиБаня" class="site-footer__logo-img" width="48" height="48" loading="lazy" />
+              <span class="site-footer__logo-text">АпиБаня</span>
+            </div>
+            <p class="site-footer__desc">Уникальная русская баня на дровах с апитерапией в Белгороде. Душевный отдых в славянских традициях.</p>
+            <div class="site-footer__socials">
+              <a href="https://t.me/+79205558559" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Telegram">
+                <img src="../images/telegram.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
+              <a href="https://vk.com/apibanya" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="ВКонтакте">
+                <img src="../images/vk.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
+              <a href="https://ok.ru/profile/576816808918" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Одноклассники">
+                <img src="../images/ok.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
+              <a href="https://dzen.ru/id/61f9116f07318d6ec2c3bbed" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Яндекс Дзен">
+                <img src="../images/zen.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <p class="site-footer__column-title">Навигация</p>
+            <nav class="site-footer__nav" aria-label="Навигация в подвале">
+              <a href="/" class="site-footer__nav-link">Главная</a>
+              <a href="/parenie/" class="site-footer__nav-link">Парение вениками</a>
+              <a href="/spa/" class="site-footer__nav-link">SPA-процедуры</a>
+              <a href="/apiterapiya/" class="site-footer__nav-link">Апитерапия</a>
+              <a href="/ceny/" class="site-footer__nav-link">Цены</a>
+              <a href="/pcheloprodukty/" class="site-footer__nav-link">Пчелопродукция</a>
+            </nav>
+          </div>
+
+          <div>
+            <p class="site-footer__column-title">Контакты</p>
+            <div>
+              <div class="site-footer__contact-item">
+                <span>г. Белгород, Ближняя Игуменка 16/3, 4-ая Садовая 36</span>
+              </div>
+              <a href="tel:+79205558559" class="site-footer__phone">+7 920 555 85 59</a>
+              <div class="site-footer__contact-item" style="margin-top: var(--space-4);">
+                <span>Ежедневно с 9:00 до 22:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="site-footer__column-title">Как проехать</p>
+            <div style="border-radius: var(--radius-md); overflow: hidden;">
+              <iframe loading="lazy" src="https://yandex.ru/map-widget/v1/org/apibanya/81471725923/?ll=36.679902%2C50.606878&z=15" width="100%" height="200" style="border:0;" allowfullscreen title="Карта проезда в АпиБаню"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <p class="site-footer__copyright">&copy; 2024–2026 АпиБаня. Все права защищены.</p>
+          <button class="site-footer__legal-link" data-modal-open="rules-modal">Правила аренды</button>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- JS -->
+    <script src="../js/main.js" defer></script>
+
+    <!-- Analytics (deferred to not block rendering) -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Top.Mail.Ru
+      var _tmr = window._tmr || (window._tmr = []);
+      _tmr.push({id: "3416385", type: "pageView", start: (new Date()).getTime()});
+      var ts = document.createElement("script"); ts.async = true;
+      ts.src = "https://top-fwz1.mail.ru/js/code.js";
+      document.body.appendChild(ts);
+
+      // Clarity
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        l.body.appendChild(t);
+      })(window, document, "clarity", "script", "jmmzou55r5");
+
+      // Yandex.Metrika
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,e.body.appendChild(k)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(93803641, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+      });
+    });
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/93803641" style="position:absolute;left:-9999px;" alt="" /></div>
+      <div><img src="https://top-fwz1.mail.ru/counter?id=3416385;js=na" style="position:absolute;left:-9999px;" alt="" /></div>
+    </noscript>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.menu-list {
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    z-index: 30;
+    box-shadow: 0 21px 63px 0 rgb(0 0 0 / 7%);
+    transform: translate3d(0px, -3000px, 0px);
+    transition: all .7s ease-in-out;
+}

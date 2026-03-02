@@ -1,0 +1,14 @@
+.menu-static__contact {
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 5px;
+}
+
+@media (max-width: 900px) {
+    .menu-static__contact {
+        padding-right: 0;
+    }
+}

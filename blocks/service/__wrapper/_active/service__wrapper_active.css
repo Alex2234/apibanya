@@ -1,0 +1,6 @@
+.service__wrapper_active {
+    display: grid;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}

@@ -1,0 +1,15 @@
+.footer__contact-data {
+    margin: 0;
+    max-width: 270px;
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
+@media (max-width: 900px) {
+    .footer__contact-data {
+        margin-bottom: 20px;
+    }
+}

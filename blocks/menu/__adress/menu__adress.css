@@ -1,0 +1,16 @@
+.menu__adress {
+    margin: 0;
+    max-width: 220px;
+    text-align: center;
+    font-family: 'Bahnschrift';
+    color: #000000;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.3em;
+}
+
+@media (max-width: 900px) {
+    .menu__adress {
+       display: none;
+    }
+}

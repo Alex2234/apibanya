@@ -1,0 +1,12 @@
+.reviews {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 90px 20px;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+@media (max-width: 900px) {
+    .reviews {
+        padding: 30px 10px;
+    }
+}

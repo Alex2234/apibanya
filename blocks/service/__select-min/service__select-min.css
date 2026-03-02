@@ -1,0 +1,7 @@
+.service__select-min {
+    grid-area: select-min;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-self: start;
+}

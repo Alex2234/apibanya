@@ -1,0 +1,16 @@
+.menu {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    max-width: 1170px;
+    align-items: center;
+    padding: 10px 15px;
+    justify-content: space-between;
+    position: relative;
+}
+
+@media (max-width: 900px) {
+    .menu {
+       padding: 5px 10px;
+    }
+}

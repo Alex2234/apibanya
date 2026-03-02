@@ -1,0 +1,13 @@
+.menu-block {
+    background-color: #fff;
+    width: 100vw;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    z-index: 8;
+    box-shadow: 0 21px 63px 0 rgb(0 0 0 / 7%);
+    transform: translate3d(0px, -250px, 0px);
+    transition: .7s;
+}

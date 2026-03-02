@@ -1,0 +1,14 @@
+.slider__dot {
+    padding: 6px 6px;
+    background-color: #929191;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+
+@media (max-width: 900px) {
+    .slider__dot {
+        padding: 4px;
+    }
+}

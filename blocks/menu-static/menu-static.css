@@ -1,0 +1,21 @@
+.menu-static {
+    position: absolute;
+    max-width: 1170px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+    .menu-static {
+       flex-direction: column;
+       row-gap: 15px;
+    }
+}

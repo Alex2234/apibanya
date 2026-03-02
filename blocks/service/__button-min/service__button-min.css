@@ -1,0 +1,22 @@
+.service__button-min {
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #eea336;
+    border-radius: 100px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding: 10px 7px;
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    color: #000;
+}
+
+.service__button-min:hover {
+    background-color: #eea336;
+    color: #fff;
+}

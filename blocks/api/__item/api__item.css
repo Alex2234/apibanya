@@ -1,0 +1,10 @@
+.api__item {
+    margin: 0;
+    font-size: 27px;
+}
+
+@media (max-width: 900px) {
+    .api__item {
+        font-size: 21px;
+    }
+}

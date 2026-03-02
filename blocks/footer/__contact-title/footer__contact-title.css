@@ -1,0 +1,20 @@
+.footer__contact-title {
+    margin: 0;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #ec6608, #faba5d 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* color: #d14a2f; */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: 'Lunchbox', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+@media (max-width: 900px) {
+    .footer__contact-title{
+        margin-bottom: 5px;
+    }
+}

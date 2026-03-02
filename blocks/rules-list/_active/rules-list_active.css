@@ -1,0 +1,9 @@
+.rules-list_active {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+@media (max-width: 900px) {
+    .rules-list_active {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}

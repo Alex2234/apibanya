@@ -1,0 +1,15 @@
+.api__title {
+    margin: 0;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #ec6608, #faba5d 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 55px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .api__title {
+        font-size: 35px;
+    }
+}

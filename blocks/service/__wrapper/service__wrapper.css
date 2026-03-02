@@ -1,0 +1,21 @@
+.service__wrapper {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    max-width: 900px;
+    margin: 30px auto;
+    grid-template-areas: "select-min photos"
+                        "items photos";
+    gap: 10px 30px;
+}
+
+@media (max-width: 900px) {
+    .service__wrapper {
+        
+        grid-template-areas: 
+                             "select-min"
+                             "items" 
+                             "photos"       ;
+    }
+}

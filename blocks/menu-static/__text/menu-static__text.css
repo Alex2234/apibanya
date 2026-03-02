@@ -1,0 +1,10 @@
+.menu-static__text {
+    margin: 0;
+    max-width: 250px;
+    text-align: left;
+    font-family: 'Bahnschrift';
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.3em;
+}

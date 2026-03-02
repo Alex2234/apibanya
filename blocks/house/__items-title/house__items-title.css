@@ -1,0 +1,13 @@
+.house__items-title {
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 55px;
+}
+
+@media (max-width: 900px) {
+    .house__items-title {
+        margin-top: 15px;
+        font-size: 27px;
+    }
+}

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /blocks/
+Disallow: /pages/
+Disallow: /scripts/
+Disallow: /vendor/
+Disallow: /index-old.html
+
+Host: https://apibanya.ru
+Sitemap: https://apibanya.ru/sitemap.xml
+
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&utm_id /
+Clean-param: gclid&fbclid&yclid&ymclid&ysclid /
+Clean-param: openstat /
+Clean-param: ref&referrer&utm_referrer /

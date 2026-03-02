@@ -1,0 +1,15 @@
+.menu__tel {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Bahnschrift';
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+
+@media (max-width: 900px) {
+    .menu__tel {
+    font-size: 15px;
+}
+}

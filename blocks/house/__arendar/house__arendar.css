@@ -1,0 +1,11 @@
+.house__arendar {
+    margin: 0;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+@media (max-width: 900px) {
+    .house__arendar {
+        font-size: 19px;
+    }
+}

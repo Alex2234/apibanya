@@ -1,0 +1,17 @@
+.rules-list__text {
+    text-decoration: none;
+    color: #000;
+    font-size: 21px;
+    text-align: center;
+    line-height: 1;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    padding: 5px 5px;
+}
+
+@media (max-width: 900px) {
+    .rules-list__text {
+        font-size: 14px;
+    }
+}

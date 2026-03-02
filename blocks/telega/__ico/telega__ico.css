@@ -1,0 +1,18 @@
+.telega__ico {
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    transition: all .5s ease-in-out;
+}
+
+@media (max-width: 900px) {
+    .telegram__ico {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+.telegram__ico:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,12 @@
+.api {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 90px 20px;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+@media (max-width: 900px) {
+    .api {
+        padding: 20px 10px;
+    }
+}

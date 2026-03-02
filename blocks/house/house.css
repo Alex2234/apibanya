@@ -1,0 +1,12 @@
+.house {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 80px 20px;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+@media (max-width: 900px) {
+    .house {
+        padding: 45px 10px;
+    }
+}

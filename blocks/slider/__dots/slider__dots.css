@@ -1,0 +1,9 @@
+.slider__dots {
+    position: absolute;
+    display: flex;
+    z-index: 3;
+    bottom: 10px;
+    column-gap: 5px;
+    right: 50%;
+    transform: translateX(50%);
+}

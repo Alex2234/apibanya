@@ -1,0 +1,15 @@
+.service__select {
+    margin-top: 40px;
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 900px) {
+    .service__select {
+        margin-top: 15px;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}

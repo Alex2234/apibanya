@@ -1,0 +1,23 @@
+.house__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.house__content:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 900px) {
+    .house__content {
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .house__content:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+    }
+}

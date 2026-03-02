@@ -1,0 +1,26 @@
+.rules-list {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 40px 20px;
+    font-family: 'Bahnschrift', sans-serif;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    z-index: 30;
+    box-shadow: 63px 63px 63px 63px rgb(0 0 0 / 7%);
+    transform: translate3d(0px, -3000px, 0px);
+    transition: all .7s ease-in-out;
+    overflow: auto;
+}
+
+
+@media (max-width: 900px) {
+    .rules-list {
+        padding: 5px 5px;
+    }
+}

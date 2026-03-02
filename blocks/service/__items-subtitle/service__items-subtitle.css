@@ -1,0 +1,13 @@
+.service__items-subtitle {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+@media (max-width: 900px) {
+    .service__items-subtitle {
+        font-size: 17px;
+    }
+}

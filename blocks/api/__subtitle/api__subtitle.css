@@ -1,0 +1,13 @@
+.api__subtitle {
+    margin: 0;
+    font-size: 27px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    .api__subtitle{
+        font-size: 20px;
+    }
+}

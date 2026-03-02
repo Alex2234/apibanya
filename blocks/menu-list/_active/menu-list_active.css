@@ -1,0 +1,9 @@
+.menu-list_active {
+    transform: translate3d(0px, 70px, 0px);
+}
+
+@media (max-width: 900px) {
+    .menu-list_active {
+        transform: translate3d(0px, 50px, 0px);
+    }
+}

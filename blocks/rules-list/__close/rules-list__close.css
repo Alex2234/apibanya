@@ -1,0 +1,15 @@
+.rules-list__close {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .rules-list__close {
+        width: 25px;
+        height: 25px;
+    }
+}

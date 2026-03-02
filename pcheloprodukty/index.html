@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="view-transition" content="same-origin" />
+    <title>Пчелопродукция и сельхозпродукция — мёд, прополис, перга | АпиБаня</title>
+    <meta name="description" content="Натуральный мёд, маточное молочко, прополис, забрус, перга, подмор с собственной пасеки. Домашние яйца и мясо. АпиБаня, Белгород." />
+    <meta name="keywords" content="мёд белгород, прополис, маточное молочко, перга, забрус, подмор, воск, пчелопродукция, домашние яйца, мясо бройлера, апибаня" />
+    <link rel="canonical" href="https://apibanya.ru/pcheloprodukty/" />
+    <link rel="alternate" hreflang="ru-RU" href="https://apibanya.ru/pcheloprodukty/" />
+    <meta name="theme-color" content="#2d5016" />
+    <meta name="yandex-verification" content="d695bd36c5b9d5aa" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Пчелопродукция и сельхозпродукция — мёд, прополис, перга | АпиБаня" />
+    <meta property="og:description" content="Натуральный мёд, маточное молочко, прополис, забрус, перга, подмор с собственной пасеки. Домашние яйца и мясо. АпиБаня, Белгород." />
+    <meta property="og:url" content="https://apibanya.ru/pcheloprodukty/" />
+    <meta property="og:site_name" content="АпиБаня" />
+    <meta property="og:image" content="https://apibanya.ru/images/uslugi/honey.webp" />
+    <meta property="og:image:type" content="image/webp" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Пчелопродукция и сельхозпродукция — мёд, прополис, перга | АпиБаня" />
+    <meta name="twitter:description" content="Натуральный мёд, маточное молочко, прополис, забрус, перга, подмор с собственной пасеки. АпиБаня, Белгород." />
+    <meta name="twitter:image" content="https://apibanya.ru/images/uslugi/honey.webp" />
+
+    <!-- Favicon -->
+    <link rel="icon" sizes="120x120" href="https://apibanya.ru/images/favicon.svg" type="image/svg+xml" />
+
+    <!-- Fonts Preload -->
+    <link rel="preload" href="../fonts/inter-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../fonts/playfair-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/components/button.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/components/card.css" />
+    <link rel="stylesheet" href="../css/components/modal.css" />
+    <link rel="stylesheet" href="../css/pages/home.css" />
+
+    <!-- Preconnect Analytics -->
+    <link rel="preconnect" href="https://mc.yandex.ru" crossorigin />
+    <link rel="dns-prefetch" href="//mc.yandex.ru" />
+    <link rel="dns-prefetch" href="//top-fwz1.mail.ru" />
+    <link rel="dns-prefetch" href="//www.clarity.ms" />
+
+    <!-- Schema.org — BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://apibanya.ru/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Пчелопродукция",
+          "item": "https://apibanya.ru/pcheloprodukty/"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+      .page-banner {
+        background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 60%, var(--color-primary-light) 100%);
+        color: var(--color-white);
+        text-align: center;
+        padding-block: var(--space-16) var(--space-10);
+      }
+
+      .page-banner__breadcrumb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-2);
+        margin-bottom: var(--space-5);
+        font-size: var(--font-size-sm);
+      }
+
+      .page-banner__breadcrumb a {
+        color: rgba(255, 255, 255, 0.7);
+        transition: color var(--transition-fast);
+      }
+
+      .page-banner__breadcrumb a:hover {
+        color: var(--color-white);
+      }
+
+      .page-banner__breadcrumb span {
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      .page-banner__breadcrumb [aria-current="page"] {
+        color: var(--color-gold-light);
+        pointer-events: none;
+      }
+
+      .page-banner__title {
+        font-family: var(--font-accent);
+        font-size: var(--font-size-4xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-white);
+        margin-bottom: var(--space-4);
+        line-height: var(--line-height-tight);
+      }
+
+      .page-banner__subtitle {
+        font-size: var(--font-size-lg);
+        color: rgba(255, 255, 255, 0.85);
+        max-width: 640px;
+        margin-inline: auto;
+        line-height: var(--line-height-normal);
+      }
+
+      @media (max-width: 1024px) {
+        .page-banner__title {
+          font-size: var(--font-size-3xl);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .page-banner {
+          padding-block: var(--space-12) var(--space-8);
+        }
+
+        .page-banner__title {
+          font-size: var(--font-size-2xl);
+        }
+      }
+    </style>
+  </head>
+  <body class="page">
+
+    <!-- HEADER START -->
+    <header class="site-header is-scrolled">
+      <div class="site-header__inner">
+        <a href="/" class="site-header__logo">
+          <img src="../images/logo.webp" alt="Логотип АпиБаня" class="site-header__logo-img" width="48" height="48" />
+          <span class="site-header__logo-text">АпиБаня</span>
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li><a href="/" class="site-nav__link">Главная</a></li>
+            <li><a href="/parenie/" class="site-nav__link">Парение</a></li>
+            <li><a href="/spa/" class="site-nav__link">SPA</a></li>
+            <li><a href="/apiterapiya/" class="site-nav__link">Апитерапия</a></li>
+            <li><a href="/ceny/" class="site-nav__link">Цены</a></li>
+            <li><a href="/kontakty/" class="site-nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__contact">
+          <div class="site-header__social">
+            <a href="https://t.me/+79205558559" target="_blank" rel="noopener noreferrer" class="site-header__social-link" aria-label="Telegram">
+              <img src="../images/telegram.svg" alt="" width="20" height="20" />
+            </a>
+          </div>
+          <a href="tel:+79205558559" class="site-header__phone">+7 920 555 85 59</a>
+        </div>
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-overlay"></div>
+    <nav class="mobile-nav" aria-label="Мобильная навигация">
+      <button class="mobile-nav__close" aria-label="Закрыть меню">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor"/></svg>
+      </button>
+      <ul class="mobile-nav__list">
+        <li><a href="/" class="mobile-nav__link">Главная</a></li>
+        <li><a href="/parenie/" class="mobile-nav__link">Парение вениками</a></li>
+        <li><a href="/spa/" class="mobile-nav__link">SPA-процедуры</a></li>
+        <li><a href="/apiterapiya/" class="mobile-nav__link">Апитерапия</a></li>
+        <li><a href="/ceny/" class="mobile-nav__link">Цены</a></li>
+        <li><a href="/pcheloprodukty/" class="mobile-nav__link" aria-current="page">Пчелопродукция</a></li>
+        <li><a href="/kontakty/" class="mobile-nav__link">Контакты</a></li>
+      </ul>
+      <div class="mobile-nav__contact">
+        <a href="tel:+79205558559" class="mobile-nav__phone">+7 920 555 85 59</a>
+        <div class="mobile-nav__socials">
+          <a href="https://t.me/+79205558559" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Telegram">
+            <img src="../images/telegram.svg" alt="" width="20" height="20" />
+          </a>
+        </div>
+        <p class="mobile-nav__address">г. Белгород, Ближняя Игуменка 16/3, 4-ая Садовая 36</p>
+      </div>
+    </nav>
+    <!-- HEADER END -->
+
+    <main class="page__main">
+
+      <!-- ===== PAGE BANNER ===== -->
+      <section class="page-banner">
+        <div class="container">
+          <nav class="page-banner__breadcrumb" aria-label="Хлебные крошки">
+            <a href="/">Главная</a>
+            <span>/</span>
+            <a href="/pcheloprodukty/" aria-current="page">Пчелопродукция</a>
+          </nav>
+          <h1 class="page-banner__title">Пчелопродукция и сельхозпродукция</h1>
+          <p class="page-banner__subtitle">Натуральные продукты пчеловодства с собственной пасеки и свежая фермерская продукция</p>
+        </div>
+      </section>
+
+      <!-- ===== ПЧЕЛОПРОДУКЦИЯ ===== -->
+      <section class="section" id="bee-products">
+        <div class="container">
+          <div class="section__header reveal">
+            <h2 class="section__title">Пчелопродукция</h2>
+            <p class="section__subtitle">Натуральные продукты пчеловодства с собственной пасеки АпиБани</p>
+          </div>
+          <div class="grid grid--auto reveal-stagger">
+
+            <!-- Мёд -->
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="../images/uslugi/honey.webp" alt="Натуральный мёд из белгородского разнотравья" width="400" height="400" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Мёд</h3>
+                <p class="product-card__desc">Натуральный мёд из белгородского разнотравья. Он очень плотный, тягучий и концентрированный. Чистый воздух, богатое разнообразие цветов и среднерусская пчела — залог здоровья в каждой капле нашего мёда. Большое удовольствие есть его ложкой вприкуску с горячим чаем.</p>
+              </div>
+            </article>
+
+            <!-- Маточное молочко -->
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="../images/uslugi/milk.webp" alt="Маточное молочко" width="400" height="400" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Маточное молочко</h3>
+                <p class="product-card__desc">Это студенистое вещество, производимое медоносными пчёлами для кормления пчелиных маток. Маточное молочко используется как биологически активная добавка во время восстановительного периода после тяжёлых заболеваний, для увеличения выносливости, при ослабленном иммунитете и хронической усталости.</p>
+              </div>
+            </article>
+
+            <!-- Трутневое молочко -->
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="../images/uslugi/trut.webp" alt="Трутневое молочко" width="400" height="400" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Трутневое молочко</h3>
+                <p class="product-card__desc">Ценнейший и уникальный биологически активный продукт пчеловодства, представляющий собой выжимку трутневого расплода. Компоненты, входящие в состав, способствуют укреплению иммунитета и усилению естественных защитных сил организма к инфекциям, улучшают работоспособность и жизненный тонус, нормализуют обмен веществ, оказывают благоприятное действие на сердечно-сосудистую систему.</p>
+              </div>
+            </article>
+
+            <!-- Прополис -->
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="../images/uslugi/propolis.webp" alt="Прополис" width="400" height="400" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Прополис</h3>
+                <p class="product-card__desc">Особый пчелиный клей оказывает общеукрепляющее действие, повышает защитные силы организма, снижает риск развития простудных заболеваний. Рекомендован для приёма взрослым и детям от 3 лет.</p>
+              </div>
+            </article>
+
+            <!-- Воск -->
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="../images/uslugi/vosk.webp" alt="Пчелиный воск" width="400" height="400" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Воск</h3>
+                <p class="product-card__desc">Пчелиный секрет, который используется для строительства сот. Его уникальный по химическим свойствам состав активно используют в лечебных и косметических целях, а также в качестве основы для свечей и полироли.</p>
+              </div>
+            </article>
+
+            <!-- Забрус -->
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="../images/uslugi/zabrus.webp" alt="Забрус" width="400" height="400" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Забрус</h3>
+                <p class="product-card__desc">Медовый срез с пчелиных сот. Забрус прекрасно справляется с патогенными бактериями. Его применение рекомендовано для лечения многих вирусных и инфекционных заболеваний, например, в ротовой полости, носоглотке или коже.</p>
+              </div>
+            </article>
+
+            <!-- Перга -->
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="../images/uslugi/perga.webp" alt="Перга — пчелиный хлеб" width="400" height="400" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Перга</h3>
+                <p class="product-card__desc">Один из ценнейших продуктов пчеловодства. Её называют также «пчелиным хлебом». Это цветочная пыльца, собранная пчёлами с цветков растений, сложенная и утрамбованная в соты, залитая сверху мёдом. В ней содержится полный спектр витаминов, макро- и микроэлементов, необходимых человеку для поддержания здоровья и прекрасного самочувствия.</p>
+              </div>
+            </article>
+
+            <!-- Подмор -->
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="../images/uslugi/podmor.webp" alt="Пчелиный подмор" width="400" height="400" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Подмор</h3>
+                <p class="product-card__desc">Кладезь уникальных веществ, обладающих мощными целительными свойствами. Осыпь пчёл богата на ценнейшие комплексы биологически активных веществ, которые принимают участие во многих физиологических процессах, протекающих в организме. Подмор эффективен для заживления ран, нейтрализации судорог, нормализации работы органов мочевыделительной системы, устранения проявлений интоксикации, восстановления иммунитета.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== СЕЛЬХОЗПРОДУКЦИЯ ===== -->
+      <section class="section section--alt" id="farm-products">
+        <div class="container">
+          <div class="section__header reveal">
+            <h2 class="section__title">Сельхозпродукция</h2>
+            <p class="section__subtitle">Свежая домашняя продукция с нашей фермы</p>
+          </div>
+          <div class="grid grid--auto reveal-stagger">
+
+            <!-- Куриные яйца -->
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="../images/uslugi/eags-chicen.webp" alt="Домашние куриные яйца" width="400" height="400" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Куриные домашние яйца</h3>
+                <p class="product-card__desc">Всегда свежие домашние куриные яйца! Натуральный продукт с собственной фермы. Яйца от кур, выращенных на свободном выгуле.</p>
+              </div>
+            </article>
+
+            <!-- Мясо бройлера -->
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="../images/uslugi/eat-chicken.webp" alt="Мясо домашних бройлеров" width="400" height="400" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Мясо домашних бройлеров</h3>
+                <p class="product-card__desc">По предварительному заказу вы можете заказать свежее мясо домашних бройлеров! Натуральный продукт с нашей фермы. Бройлеры выращены без антибиотиков, на натуральных кормах. Гарантируем качество и свежесть.</p>
+              </div>
+            </article>
+
+            <!-- Перепелиные яйца -->
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="../images/uslugi/eags-perepel.webp" alt="Домашние перепелиные яйца" width="400" height="400" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Перепелиные домашние яйца</h3>
+                <p class="product-card__desc">Всегда свежие домашние перепелиные яйца! Натуральный продукт, полученный от перепелов, выращенных на нашей ферме без добавок и антибиотиков. Высокое качество и полезные свойства для вашего здоровья. Отличный вкус и высокая питательность.</p>
+              </div>
+            </article>
+
+            <!-- Мясо перепелов -->
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="../images/uslugi/eat-perepel.webp" alt="Мясо домашних перепелок" width="400" height="400" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Мясо домашних перепелок</h3>
+                <p class="product-card__desc">По предварительному заказу вы можете заказать свежее мясо домашних перепелок! Натуральный продукт с нашей фермы, выращенный без антибиотиков и искусственных добавок. Перепела питаются только натуральными кормами. Гарантируем высочайшее качество и отличный вкус.</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CTA ===== -->
+      <section class="cta-band">
+        <div class="container">
+          <h2 class="cta-band__title reveal">Закажите натуральную продукцию</h2>
+          <p class="cta-band__text reveal">Позвоните нам или напишите в мессенджер — мы расскажем о наличии и поможем с заказом.</p>
+          <div class="cta-band__actions reveal">
+            <a href="tel:+79205558559" class="btn btn--accent btn--lg">Позвонить</a>
+            <a href="https://t.me/+79205558559" target="_blank" rel="noopener noreferrer" class="btn btn--white btn--lg">Написать в Telegram</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ПРАВИЛА АРЕНДЫ (модальное окно) ===== -->
+      <div class="modal-overlay" id="rules-modal">
+        <div class="modal" role="dialog" aria-labelledby="rules-title" aria-modal="true">
+          <div class="modal__header">
+            <h2 class="modal__title" id="rules-title">Правила аренды АпиБани</h2>
+            <button class="modal__close" data-modal-close aria-label="Закрыть">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
+          <div class="modal__body">
+            <div class="modal__text">
+              <p>Настоящие Правила являются обязательными для соблюдения всеми посетителями бани. С настоящими Правилами необходимо ознакомиться до посещения бани.</p>
+              <p>Начав пользование баней, Вы подтверждаете, что ознакомлены с настоящими Правилами, согласны с ними и обязуетесь их соблюдать.</p>
+              <p>За травмы и несчастные случаи, связанные с нарушением правил пользования баней, Администрация ответственности не несет!</p>
+              <p>Посетитель несет ответственность за сохранность и порчу имущества или оборудования.</p>
+              <strong>Посетителям запрещается:</strong>
+              <p>Входить в баню в состоянии алкогольного и наркотического опьянения; проносить оружие и пиротехнические изделия; оставлять детей без сопровождения взрослых; посещение бани при противопоказаниях; использовать моющие средства в стеклянной таре; заливать печку водой сверх нормы.</p>
+              <strong>Посетители обязаны:</strong>
+              <p>Соблюдать чистоту и порядок; соблюдать правила пожарной безопасности; находиться в сменной обуви; вести себя уважительно; следовать указаниям персонала; покинуть баню после окончания сеанса.</p>
+              <p>Звонки осуществляются с 9:00 до 20:00, далее только мессенджеры.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- FOOTER START -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="site-footer__grid">
+          <div class="site-footer__brand">
+            <div class="site-footer__logo">
+              <img src="../images/logo.webp" alt="Логотип АпиБаня" class="site-footer__logo-img" width="48" height="48" loading="lazy" />
+              <span class="site-footer__logo-text">АпиБаня</span>
+            </div>
+            <p class="site-footer__desc">Уникальная русская баня на дровах с апитерапией в Белгороде. Душевный отдых в славянских традициях.</p>
+            <div class="site-footer__socials">
+              <a href="https://t.me/+79205558559" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Telegram">
+                <img src="../images/telegram.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
+              <a href="https://vk.com/apibanya" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="ВКонтакте">
+                <img src="../images/vk.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
+              <a href="https://ok.ru/profile/576816808918" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Одноклассники">
+                <img src="../images/ok.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
+              <a href="https://dzen.ru/id/61f9116f07318d6ec2c3bbed" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Яндекс Дзен">
+                <img src="../images/zen.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <p class="site-footer__column-title">Навигация</p>
+            <nav class="site-footer__nav" aria-label="Навигация в подвале">
+              <a href="/" class="site-footer__nav-link">Главная</a>
+              <a href="/parenie/" class="site-footer__nav-link">Парение вениками</a>
+              <a href="/spa/" class="site-footer__nav-link">SPA-процедуры</a>
+              <a href="/apiterapiya/" class="site-footer__nav-link">Апитерапия</a>
+              <a href="/ceny/" class="site-footer__nav-link">Цены</a>
+              <a href="/pcheloprodukty/" class="site-footer__nav-link">Пчелопродукция</a>
+            </nav>
+          </div>
+
+          <div>
+            <p class="site-footer__column-title">Контакты</p>
+            <div>
+              <div class="site-footer__contact-item">
+                <span>г. Белгород, Ближняя Игуменка 16/3, 4-ая Садовая 36</span>
+              </div>
+              <a href="tel:+79205558559" class="site-footer__phone">+7 920 555 85 59</a>
+              <div class="site-footer__contact-item" style="margin-top: var(--space-4);">
+                <span>Ежедневно с 9:00 до 22:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="site-footer__column-title">Как проехать</p>
+            <div style="border-radius: var(--radius-md); overflow: hidden;">
+              <iframe loading="lazy" src="https://yandex.ru/map-widget/v1/org/apibanya/81471725923/?ll=36.679902%2C50.606878&z=15" width="100%" height="200" style="border:0;" allowfullscreen title="Карта проезда в АпиБаню"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <p class="site-footer__copyright">&copy; 2024–2026 АпиБаня. Все права защищены.</p>
+          <button class="site-footer__legal-link" data-modal-open="rules-modal">Правила аренды</button>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- JS -->
+    <script src="../js/main.js" defer></script>
+
+    <!-- Analytics (deferred to not block rendering) -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Top.Mail.Ru
+      var _tmr = window._tmr || (window._tmr = []);
+      _tmr.push({id: "3416385", type: "pageView", start: (new Date()).getTime()});
+      var ts = document.createElement("script"); ts.async = true;
+      ts.src = "https://top-fwz1.mail.ru/js/code.js";
+      document.body.appendChild(ts);
+
+      // Clarity
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        l.body.appendChild(t);
+      })(window, document, "clarity", "script", "jmmzou55r5");
+
+      // Yandex.Metrika
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,e.body.appendChild(k)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(93803641, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+      });
+    });
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/93803641" style="position:absolute;left:-9999px;" alt="" /></div>
+      <div><img src="https://top-fwz1.mail.ru/counter?id=3416385;js=na" style="position:absolute;left:-9999px;" alt="" /></div>
+    </noscript>
+  </body>
+</html>

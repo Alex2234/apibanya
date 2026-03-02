@@ -1,0 +1,11 @@
+.menu__contact {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .menu__contact {
+      column-gap: 5px;
+    }
+}

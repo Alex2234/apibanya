@@ -1,0 +1,27 @@
+.arrow {
+    position: absolute;
+    padding: 30px;
+    border: none;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-image: url(../../images/arrow.svg);
+    border-radius: 100px;
+    background-size: 30px 30px;
+    background-position: center;
+    background-color: #eea336;
+    z-index: 5;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+@media (max-width: 900px) {
+    .arrow {
+        padding: 15px;
+        background-size: 15px 15px;
+    }
+}
+
+
+.arrow:hover {
+    opacity: .8;
+}

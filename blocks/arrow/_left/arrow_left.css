@@ -1,0 +1,6 @@
+.arrow__left {
+    transform: rotate(180deg);
+    left: 20px;
+    top: 50%;
+    bottom: 50%;
+}
