@@ -57,8 +57,9 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Force HTTPS
+  # Force HTTPS (учитываем прокси-серверы хостинга)
   RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
   # Remove trailing slash (except directories)
