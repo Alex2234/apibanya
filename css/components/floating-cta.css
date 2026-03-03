@@ -1,0 +1,123 @@
+/* ============================================
+   Floating CTA — Mobile "Записаться" Button
+   ============================================ */
+
+.floating-cta {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .floating-cta {
+    display: block;
+    position: fixed;
+    bottom: var(--space-4);
+    left: var(--space-4);
+    right: var(--space-4);
+    z-index: 250;
+  }
+
+  /* Hide when mobile menu is open */
+  body.menu-open .floating-cta {
+    display: none;
+  }
+
+  /* --- Main button --- */
+  .floating-cta__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: var(--space-4) var(--space-6);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text);
+    background-color: var(--color-gold);
+    border: none;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    box-shadow: var(--shadow-lg);
+    transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .floating-cta__btn:hover {
+    background-color: var(--color-gold-light);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .floating-cta__btn:active {
+    transform: scale(0.97);
+  }
+
+  /* --- Options panel --- */
+  .floating-cta__options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
+    padding: var(--space-3);
+    background-color: var(--color-bg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    opacity: 0;
+    transform: translateY(16px);
+    visibility: hidden;
+    transition: opacity var(--transition-base), transform var(--transition-base), visibility var(--transition-base);
+  }
+
+  .floating-cta.is-open .floating-cta__options {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  /* --- Option links --- */
+  .floating-cta__option {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition-fast);
+  }
+
+  .floating-cta__option:hover {
+    background-color: var(--color-bg-alt);
+    color: inherit;
+  }
+
+  .floating-cta__option svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  /* Phone option */
+  .floating-cta__option--phone {
+    color: var(--color-primary);
+  }
+
+  .floating-cta__option--phone svg {
+    fill: var(--color-primary);
+  }
+
+  /* Telegram option */
+  .floating-cta__option--tg {
+    color: #2AABEE;
+  }
+
+  .floating-cta__option--tg svg {
+    fill: #2AABEE;
+  }
+
+  /* MAX messenger option */
+  .floating-cta__option--max {
+    color: #6C3AED;
+  }
+
+  .floating-cta__option--max svg {
+    fill: #6C3AED;
+  }
+}

@@ -22,6 +22,8 @@
     <meta property="og:site_name" content="АпиБаня" />
     <meta property="og:image" content="https://apibanya.ru/images/fon.webp" />
     <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -30,7 +32,7 @@
     <meta name="twitter:image" content="https://apibanya.ru/images/fon.webp" />
 
     <!-- Favicon -->
-    <link rel="icon" sizes="120x120" href="https://apibanya.ru/images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" sizes="any" href="https://apibanya.ru/images/favicon.svg" type="image/svg+xml" />
 
     <!-- Fonts Preload -->
     <link rel="preload" href="./fonts/inter-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
@@ -51,6 +53,7 @@
     <link rel="stylesheet" href="./css/components/card.css" />
     <link rel="stylesheet" href="./css/components/accordion.css" />
     <link rel="stylesheet" href="./css/components/modal.css" />
+    <link rel="stylesheet" href="./css/components/floating-cta.css" />
     <link rel="stylesheet" href="./css/pages/home.css" />
 
     <!-- Preconnect Analytics -->
@@ -58,6 +61,7 @@
     <link rel="dns-prefetch" href="//mc.yandex.ru" />
     <link rel="dns-prefetch" href="//top-fwz1.mail.ru" />
     <link rel="dns-prefetch" href="//www.clarity.ms" />
+    <link rel="dns-prefetch" href="//yandex.ru" />
 
     <!-- Schema.org — WebSite -->
     <script type="application/ld+json">
@@ -178,6 +182,20 @@
           <source src="./images/33.webm" type="video/webm" />
         </video>
         <div class="hero__overlay"></div>
+        <div class="hero__steam" aria-hidden="true">
+          <div class="hero__steam-particle"></div>
+          <div class="hero__steam-particle"></div>
+          <div class="hero__steam-particle"></div>
+          <div class="hero__steam-particle"></div>
+          <div class="hero__steam-particle"></div>
+          <div class="hero__steam-particle"></div>
+          <div class="hero__steam-particle"></div>
+          <div class="hero__steam-particle"></div>
+          <div class="hero__steam-particle"></div>
+          <div class="hero__steam-particle"></div>
+          <div class="hero__steam-particle"></div>
+          <div class="hero__steam-particle"></div>
+        </div>
         <div class="hero__content">
           <span class="hero__badge">Белгород, Ближняя Игуменка</span>
           <h1 class="hero__title">
@@ -292,7 +310,7 @@
               <p class="house-card__list-title">В баню включено:</p>
               <ul class="house-card__list">
                 <li class="house-card__list-item">Баня на дровах</li>
-                <li class="house-card__list-item">Чан с горячей водой на улице (в подарок при заказе от 2-х услуг парения)</li>
+                <li class="house-card__list-item">Чан с горячей водой на улице</li>
                 <li class="house-card__list-item">Охлаждающая купель с ледяной водой</li>
                 <li class="house-card__list-item">Сон на пчёлах</li>
                 <li class="house-card__list-item">Сеновал</li>
@@ -314,8 +332,9 @@
               <ul class="house-card__list">
                 <li class="house-card__list-item">Баня на дровах</li>
                 <li class="house-card__list-item">Отдельный домик для отдыха с камином</li>
-                <li class="house-card__list-item">Чан с горячей водой на улице (в подарок при заказе от 2-х услуг парения)</li>
+                <li class="house-card__list-item">Чан с горячей водой на улице</li>
                 <li class="house-card__list-item">Охлаждающая купель с ледяной водой</li>
+                <li class="house-card__list-item">Сеновал</li>
                 <li class="house-card__list-item">Качели на свежем воздухе</li>
                 <li class="house-card__list-item">Травяной чай, квас, мёд</li>
               </ul>
@@ -364,7 +383,7 @@
             <p class="section__subtitle">Уникальные виды парения, SPA-процедуры, пчелопродукция и домашняя кухня.</p>
           </div>
           <div class="services-preview reveal-stagger">
-            <a href="/parenie/" class="services-preview__item">
+            <a href="/parenie/" class="services-preview__item tilt-card">
               <div class="services-preview__icon">
                 <img src="./images/red.svg" alt="" width="32" height="32" />
               </div>
@@ -372,7 +391,7 @@
               <p class="services-preview__text">4 вида ритуалов: авторское, классическое, богатырское и царское парение.</p>
               <span class="link-cta">Подробнее</span>
             </a>
-            <a href="/spa/" class="services-preview__item">
+            <a href="/spa/" class="services-preview__item tilt-card">
               <div class="services-preview__icon">
                 <img src="./images/red.svg" alt="" width="32" height="32" />
               </div>
@@ -380,7 +399,7 @@
               <p class="services-preview__text">Солевое выкатывание, медовая ладочка, мыльно-берёзовый массаж и другое.</p>
               <span class="link-cta">Подробнее</span>
             </a>
-            <a href="/apiterapiya/" class="services-preview__item">
+            <a href="/apiterapiya/" class="services-preview__item tilt-card">
               <div class="services-preview__icon">
                 <img src="./images/red.svg" alt="" width="32" height="32" />
               </div>
@@ -391,6 +410,48 @@
           </div>
         </div>
       </section>
+
+      <!-- ===== БЕГУЩАЯ СТРОКА ===== -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <div class="marquee__content">
+            <span class="marquee__item">Парение вениками</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">SPA-процедуры</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">Апитерапия</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">Чан с травами</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">Холодная купель</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">Сон на пчёлах</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">Баня на дровах</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">Сеновал</span>
+            <span class="marquee__dot"></span>
+          </div>
+          <div class="marquee__content">
+            <span class="marquee__item">Парение вениками</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">SPA-процедуры</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">Апитерапия</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">Чан с травами</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">Холодная купель</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">Сон на пчёлах</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">Баня на дровах</span>
+            <span class="marquee__dot"></span>
+            <span class="marquee__item">Сеновал</span>
+            <span class="marquee__dot"></span>
+          </div>
+        </div>
+      </div>
 
       <!-- ===== АПИТЕРАПИЯ (тизер) ===== -->
       <section class="section section--cream parallax">
@@ -559,6 +620,9 @@
               <a href="https://dzen.ru/id/61f9116f07318d6ec2c3bbed" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Яндекс Дзен">
                 <img src="./images/zen.svg" alt="" width="20" height="20" loading="lazy" />
               </a>
+              <a href="https://max.ru/u/f9LHodD0cOL1sA7X4KFQdmaOjnWu4t6Uz89rl3e0JoP8oAkjPwZD1cD1Nyo" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="MAX мессенджер">
+                <img src="./images/max.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
             </div>
           </div>
 
@@ -691,5 +755,24 @@
       <div><img src="https://mc.yandex.ru/watch/93803641" style="position:absolute;left:-9999px;" alt="" /></div>
       <div><img src="https://top-fwz1.mail.ru/counter?id=3416385;js=na" style="position:absolute;left:-9999px;" alt="" /></div>
     </noscript>
+
+    <!-- Floating CTA Mobile -->
+    <div class="floating-cta">
+      <div class="floating-cta__options">
+        <a href="tel:+79205558559" class="floating-cta__option floating-cta__option--phone">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+          Позвонить
+        </a>
+        <a href="https://t.me/+79205558559" target="_blank" rel="noopener noreferrer" class="floating-cta__option floating-cta__option--tg">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.66-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.49 1.02-.74 3.98-1.73 6.64-2.88 7.97-3.44 3.8-1.58 4.59-1.86 5.1-1.87.11 0 .37.03.54.17.14.12.18.28.2.45-.01.06.01.24 0 .38z"/></svg>
+          Написать в Telegram
+        </a>
+        <a href="https://max.ru/u/f9LHodD0cOL1sA7X4KFQdmaOjnWu4t6Uz89rl3e0JoP8oAkjPwZD1cD1Nyo" target="_blank" rel="noopener noreferrer" class="floating-cta__option floating-cta__option--max">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.2L4 17.2V4h16v12z"/><path d="M7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
+          Написать в MAX
+        </a>
+      </div>
+      <button class="floating-cta__btn" aria-label="Записаться">Записаться</button>
+    </div>
   </body>
 </html>

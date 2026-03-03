@@ -320,15 +320,19 @@
     display: none;
   }
 
+  /* Burger: absolute position inside fixed header = always visible */
   .burger {
     display: flex;
+    position: absolute;
+    right: var(--space-5);
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
 @media (max-width: 640px) {
   .site-header__inner {
     height: 60px;
-    padding-inline: var(--space-4);
   }
 
   .site-header__logo-img {
@@ -347,11 +351,12 @@
     display: none;
   }
 
-  /* Make burger bigger and more visible */
+  /* Bigger burger on small screens */
   .burger {
     width: 44px;
     height: 44px;
     padding: 8px;
+    right: var(--space-4);
     border-radius: var(--radius-md);
     background-color: rgba(250, 247, 242, 0.85);
   }

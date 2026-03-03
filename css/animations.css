@@ -268,6 +268,165 @@
   }
 }
 
+/* ---- Steam / Particles on Hero ---- */
+.hero__steam {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero__steam-particle {
+  position: absolute;
+  bottom: -20px;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, rgba(255,255,255,0.5), transparent);
+  border-radius: 50%;
+  animation: steam-rise linear infinite;
+  opacity: 0;
+}
+
+.hero__steam-particle:nth-child(1)  { left: 8%;  width: 8px;  height: 8px;  animation-duration: 7s; animation-delay: 0s; }
+.hero__steam-particle:nth-child(2)  { left: 18%; width: 5px;  height: 5px;  animation-duration: 9s; animation-delay: 1s; }
+.hero__steam-particle:nth-child(3)  { left: 30%; width: 10px; height: 10px; animation-duration: 8s; animation-delay: 2s; }
+.hero__steam-particle:nth-child(4)  { left: 42%; width: 6px;  height: 6px;  animation-duration: 10s; animation-delay: 0.5s; }
+.hero__steam-particle:nth-child(5)  { left: 55%; width: 7px;  height: 7px;  animation-duration: 7.5s; animation-delay: 3s; }
+.hero__steam-particle:nth-child(6)  { left: 65%; width: 9px;  height: 9px;  animation-duration: 8.5s; animation-delay: 1.5s; }
+.hero__steam-particle:nth-child(7)  { left: 75%; width: 5px;  height: 5px;  animation-duration: 9.5s; animation-delay: 4s; }
+.hero__steam-particle:nth-child(8)  { left: 85%; width: 8px;  height: 8px;  animation-duration: 7s; animation-delay: 2.5s; }
+.hero__steam-particle:nth-child(9)  { left: 22%; width: 12px; height: 12px; animation-duration: 11s; animation-delay: 5s; }
+.hero__steam-particle:nth-child(10) { left: 48%; width: 4px;  height: 4px;  animation-duration: 6.5s; animation-delay: 3.5s; }
+.hero__steam-particle:nth-child(11) { left: 92%; width: 7px;  height: 7px;  animation-duration: 8s; animation-delay: 0.8s; }
+.hero__steam-particle:nth-child(12) { left: 3%;  width: 6px;  height: 6px;  animation-duration: 9s; animation-delay: 6s; }
+
+@keyframes steam-rise {
+  0%   { opacity: 0; transform: translateY(0) translateX(0) scale(1); }
+  15%  { opacity: 0.6; }
+  50%  { opacity: 0.3; transform: translateY(-40vh) translateX(20px) scale(1.5); }
+  100% { opacity: 0; transform: translateY(-85vh) translateX(-15px) scale(2); }
+}
+
+/* ---- Stats Counter Section ---- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+  text-align: center;
+}
+
+.stats__item {
+  padding: var(--space-5);
+}
+
+.stats__number {
+  font-family: var(--font-accent);
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.stats__number .stats__suffix {
+  font-size: 0.6em;
+  color: var(--color-gold);
+}
+
+.stats__label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  .stats__number {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+/* ---- Marquee / Ticker ---- */
+.marquee {
+  overflow: hidden;
+  padding-block: var(--space-6);
+  background-color: var(--color-bg-dark);
+  user-select: none;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 30s linear infinite;
+}
+
+.marquee__track:hover {
+  animation-play-state: paused;
+}
+
+.marquee__content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  padding-inline: var(--space-8);
+  flex-shrink: 0;
+}
+
+.marquee__item {
+  font-family: var(--font-accent);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.marquee__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  flex-shrink: 0;
+}
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .marquee {
+    padding-block: var(--space-4);
+  }
+
+  .marquee__item {
+    font-size: var(--font-size-lg);
+  }
+
+  .marquee__content {
+    gap: var(--space-6);
+    padding-inline: var(--space-6);
+  }
+}
+
+/* ---- 3D Tilt on Cards ---- */
+.tilt-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.tilt-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
 /* ---- Reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -291,4 +450,7 @@
     opacity: 1;
     transform: none;
   }
+
+  .hero__steam { display: none; }
+  .marquee__track { animation: none; }
 }

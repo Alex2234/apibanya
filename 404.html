@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, follow" />
+    <title>Страница не найдена — АпиБаня</title>
+    <meta name="theme-color" content="#2d5016" />
+
+    <!-- Favicon -->
+    <link rel="icon" sizes="any" href="https://apibanya.ru/images/favicon.svg" type="image/svg+xml" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/tokens.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/components/button.css" />
+    <link rel="stylesheet" href="./css/components/header.css" />
+    <link rel="stylesheet" href="./css/components/footer.css" />
+    <link rel="stylesheet" href="./css/components/floating-cta.css" />
+
+    <style>
+      .error-page {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: var(--space-10) var(--space-5);
+      }
+      .error-page__code {
+        font-family: var(--font-accent);
+        font-size: 7rem;
+        font-weight: var(--font-weight-bold);
+        color: var(--color-primary);
+        line-height: 1;
+        margin-bottom: var(--space-4);
+      }
+      .error-page__title {
+        font-family: var(--font-accent);
+        font-size: var(--font-size-3xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text);
+        margin-bottom: var(--space-4);
+      }
+      .error-page__text {
+        font-size: var(--font-size-lg);
+        color: var(--color-text-light);
+        max-width: 480px;
+        margin: 0 auto var(--space-8);
+      }
+      .error-page__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-3);
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body class="page">
+
+    <!-- HEADER START -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="/" class="site-header__logo">
+          <img src="./images/logo.webp" alt="Логотип АпиБаня" class="site-header__logo-img" width="48" height="48" />
+          <span class="site-header__logo-text">АпиБаня</span>
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li><a href="/" class="site-nav__link">Главная</a></li>
+            <li><a href="/parenie/" class="site-nav__link">Парение</a></li>
+            <li><a href="/spa/" class="site-nav__link">SPA</a></li>
+            <li><a href="/apiterapiya/" class="site-nav__link">Апитерапия</a></li>
+            <li><a href="/ceny/" class="site-nav__link">Цены</a></li>
+            <li><a href="/kontakty/" class="site-nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__contact">
+          <div class="site-header__social">
+            <a href="https://t.me/+79205558559" target="_blank" rel="noopener noreferrer" class="site-header__social-link" aria-label="Telegram">
+              <img src="./images/telegram.svg" alt="" width="20" height="20" />
+            </a>
+          </div>
+          <a href="tel:+79205558559" class="site-header__phone">+7 920 555 85 59</a>
+        </div>
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-overlay"></div>
+    <nav class="mobile-nav" aria-label="Мобильная навигация">
+      <button class="mobile-nav__close" aria-label="Закрыть меню">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor"/></svg>
+      </button>
+      <ul class="mobile-nav__list">
+        <li><a href="/" class="mobile-nav__link">Главная</a></li>
+        <li><a href="/parenie/" class="mobile-nav__link">Парение вениками</a></li>
+        <li><a href="/spa/" class="mobile-nav__link">SPA-процедуры</a></li>
+        <li><a href="/apiterapiya/" class="mobile-nav__link">Апитерапия</a></li>
+        <li><a href="/ceny/" class="mobile-nav__link">Цены</a></li>
+        <li><a href="/pcheloprodukty/" class="mobile-nav__link">Пчелопродукция</a></li>
+        <li><a href="/kontakty/" class="mobile-nav__link">Контакты</a></li>
+      </ul>
+      <div class="mobile-nav__contact">
+        <a href="tel:+79205558559" class="mobile-nav__phone">+7 920 555 85 59</a>
+        <div class="mobile-nav__socials">
+          <a href="https://t.me/+79205558559" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Telegram">
+            <img src="./images/telegram.svg" alt="" width="20" height="20" />
+          </a>
+        </div>
+        <p class="mobile-nav__address">г. Белгород, Ближняя Игуменка 16/3, 4-ая Садовая 36</p>
+      </div>
+    </nav>
+    <!-- HEADER END -->
+
+    <main class="page__main">
+      <div class="error-page">
+        <div>
+          <div class="error-page__code">404</div>
+          <h1 class="error-page__title">Страница не найдена</h1>
+          <p class="error-page__text">Такой страницы не существует или она была перемещена. Воспользуйтесь навигацией или перейдите на главную.</p>
+          <div class="error-page__links">
+            <a href="/" class="btn btn--primary btn--lg">На главную</a>
+            <a href="/kontakty/" class="btn btn--outline btn--lg">Контакты</a>
+            <a href="tel:+79205558559" class="btn btn--outline btn--lg">+7 920 555 85 59</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER START -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="site-footer__grid">
+          <div class="site-footer__brand">
+            <div class="site-footer__logo">
+              <img src="./images/logo.webp" alt="Логотип АпиБаня" class="site-footer__logo-img" width="48" height="48" loading="lazy" />
+              <span class="site-footer__logo-text">АпиБаня</span>
+            </div>
+            <p class="site-footer__desc">Уникальная русская баня на дровах с апитерапией в Белгороде. Душевный отдых в славянских традициях.</p>
+            <div class="site-footer__socials">
+              <a href="https://t.me/+79205558559" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Telegram">
+                <img src="./images/telegram.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
+              <a href="https://vk.com/apibanya" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="ВКонтакте">
+                <img src="./images/vk.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
+              <a href="https://ok.ru/profile/576816808918" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Одноклассники">
+                <img src="./images/ok.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
+              <a href="https://dzen.ru/id/61f9116f07318d6ec2c3bbed" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Яндекс Дзен">
+                <img src="./images/zen.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
+              <a href="https://max.ru/u/f9LHodD0cOL1sA7X4KFQdmaOjnWu4t6Uz89rl3e0JoP8oAkjPwZD1cD1Nyo" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="MAX мессенджер">
+                <img src="./images/max.svg" alt="" width="20" height="20" loading="lazy" />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <p class="site-footer__column-title">Навигация</p>
+            <nav class="site-footer__nav" aria-label="Навигация в подвале">
+              <a href="/" class="site-footer__nav-link">Главная</a>
+              <a href="/parenie/" class="site-footer__nav-link">Парение вениками</a>
+              <a href="/spa/" class="site-footer__nav-link">SPA-процедуры</a>
+              <a href="/apiterapiya/" class="site-footer__nav-link">Апитерапия</a>
+              <a href="/ceny/" class="site-footer__nav-link">Цены</a>
+              <a href="/pcheloprodukty/" class="site-footer__nav-link">Пчелопродукция</a>
+            </nav>
+          </div>
+
+          <div>
+            <p class="site-footer__column-title">Контакты</p>
+            <div>
+              <div class="site-footer__contact-item">
+                <span>г. Белгород, Ближняя Игуменка 16/3, 4-ая Садовая 36</span>
+              </div>
+              <a href="tel:+79205558559" class="site-footer__phone">+7 920 555 85 59</a>
+              <div class="site-footer__contact-item" style="margin-top: var(--space-4);">
+                <span>Ежедневно с 9:00 до 22:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="site-footer__column-title">Как проехать</p>
+            <div style="border-radius: var(--radius-md); overflow: hidden;">
+              <iframe loading="lazy" src="https://yandex.ru/map-widget/v1/org/apibanya/81471725923/?ll=36.679902%2C50.606878&z=15" width="100%" height="200" style="border:0;" allowfullscreen title="Карта проезда в АпиБаню"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <p class="site-footer__copyright">&copy; 2024–2026 АпиБаня. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>
